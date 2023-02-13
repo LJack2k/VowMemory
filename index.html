@@ -1,27 +1,48 @@
 <html>
     <head>
         <title>Vow of the Disciple Symbol Memory Game - Destiny 2</title>
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" type="text/css" href="css/theme.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="" id="spriteFile" />
+        <script type="text/javascript" src="js/memory.js"></script>
     </head>
-    <link rel="stylesheet" type="text/css" href="css/theme.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <script type="text/javascript" src="js/vow.js"></script>
     <body>
         <div class="content-wrapper">
             <div class="content">
-                <div class="header">
-                    <h1>Vow of the Disciple Symbol Memory Game</h1>
-                    <h2>Destiny 2</h2>
+                <div id="header">
+                    <h1>Title</h1>
+                    <h2>Description</h2>
                 </div>
-                <div class="questions">
-
+                <div id="question">
+                    <div class="sprite"></div>
                 </div>
-                <div class="choices">
+                <div id="choices">
+                    <span>Choose:</span>
+                    <div class="btn-row">
 
+                    </div>
                 </div>
-                <div class="symbols">
-                    <ul id="list-symbols">
-
-                    </ul>
+                <div id="score">
+                    <div>
+                        <span>Correct: </span>
+                        <span id="correct"></span>
+                    </div>
+                    <div>
+                        <span>Wrong: </span>
+                        <span id="wrong"></span>
+                    </div>
+                </div>
+                <div class="btn-row">
+                    <div class="btn" id="btnNew">New Game</div>
+                    <div class="btn" id="btnNext">Next Symbol</div>
+                    <div class="btn" id="btnShowSymbols">Show Library</div>
+                    <div class="btn" id="btnHideSymbols">Hide Library</div>
+                </div>
+                <input type="checkbox" id="chkShowSymbols">
+                <div id="symbols">
+                    <ul></ul>
                 </div>
             </div>
         </div>

@@ -1,0 +1,49 @@
+
+.img-A {
+	background: url('../images/letters.png') no-repeat -1px 0;
+	background-size: 512px 512px;
+	width: 30px;
+	height: 34px;
+}
+
+.img-B {
+	background: url('../images/letters.png') no-repeat -41px 0;
+	background-size: 512px 512px;
+	width: 31px;
+	height: 33px;
+}
+
+.img-C {
+	background: url('../images/letters.png') no-repeat -81px 0;
+	background-size: 512px 512px;
+	width: 29px;
+	height: 33px;
+}
+
+.img-D {
+	background: url('../images/letters.png') no-repeat -121px 0;
+	background-size: 512px 512px;
+	width: 30px;
+	height: 33px;
+}
+
+.img-E {
+	background: url('../images/letters.png') no-repeat -161px 0;
+	background-size: 512px 512px;
+	width: 31px;
+	height: 34px;
+}
+
+.img-F {
+	background: url('../images/letters.png') no-repeat -201px 0;
+	background-size: 512px 512px;
+	width: 29px;
+	height: 34px;
+}
+
+.img-G {
+	background: url('../images/letters.png') no-repeat -241px 0;
+	background-size: 512px 512px;
+	width: 30px;
+	height: 33px;
+}

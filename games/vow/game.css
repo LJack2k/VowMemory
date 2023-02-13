@@ -1,0 +1,119 @@
+.sprite {
+	width: 150px;
+	aspect-ratio: 1;
+	display: block;
+}
+
+/* First Row */
+
+.img-ASCENDANTPLANE {
+	content: url('img/0_ASCENDANTPLANE.png')
+}
+
+.img-BLACKGARDEN {
+	content: url('img/1_BLACKGARDEN.png');
+}
+
+.img-BLACKHEART {
+	content: url('img/2_BLACKHEART.png');
+}
+
+.img-COMMUNE {
+	content: url('img/3_COMMUNE.png');
+}
+
+.img-DARKNESS {
+	content: url('img/4_DARKNESS.png');
+}
+
+.img-DRINK {
+	content: url('img/5_DRINK.png');
+}
+
+.img-EARTH {
+	content: url('img/6_EARTH.png');
+}
+
+/* Second Row */
+.img-ENTER {
+	content: url('img/7_ENTER.png');
+}
+
+.img-FLEET {
+	content: url('img/8_FLEET.png');
+}
+
+.img-GRIEF {
+	content: url('img/9_GRIEF.png');
+}
+
+.img-GIVE {
+	content: url('img/10_GIVE.png');
+}
+
+.img-GUARDIAN {
+	content: url('img/11_GUARDIAN.png');
+}
+
+.img-HIVE {
+	content: url('img/12_HIVE.png');
+}
+
+.img-KILL {
+	content: url('img/13_KILL.png');
+}
+
+/* Third Row */
+.img-KNOWLEDGE {
+	content: url('img/14_KNOWLEDGE.png');
+}
+
+.img-LIGHT {
+	content: url('img/15_LIGHT.png');
+}
+
+.img-LOVE {
+	content: url('img/16_LOVE.png');
+}
+
+.img-NEUTRAL {
+	content: url('img/17_NEUTRAL.png');
+}
+
+.img-PYRAMID {
+	content: url('img/18_PYRAMID.png');
+}
+
+.img-SAVATHUN {
+	content: url('img/19_SAVATHUN.png');
+}
+
+.img-SCORN {
+	content: url('img/20_SCORN.png');
+}
+
+
+/* Fourth Row */
+.img-STOP {
+	content: url('img/21_STOP.png');
+}
+
+.img-TOWER {
+	content: url('img/22_TOWER.png');
+}
+
+.img-TRAVELER {
+	content: url('img/23_TRAVELER.png');
+}
+
+.img-WITHNESS {
+	content: url('img/24_WITHNESS.png');
+}
+
+.img-WORM {
+	content: url('img/25_WORM.png');
+}
+
+.img-WORSHIP {
+	content: url('img/26_WORSHIP.png');
+}

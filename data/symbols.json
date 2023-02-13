@@ -1,0 +1,43 @@
+{
+    "title": "Vow of the Disciple",
+    "description": "Destiny 2",
+    "sprite": "css/sprite.css",
+    "symbols": [
+        {
+            "id": 0,
+            "name": "A",
+            "image": "A"
+        },
+        {
+            "id": 1,
+            "name": "B",
+            "image": "B"
+        },
+        {
+            "id": 2,
+            "name": "C",
+            "image": "C"
+        },
+        {
+            "id": 3,
+            "name": "D",
+            "image": "D"
+        },
+        {
+            "id": 4,
+            "name": "E",
+            "image": "E"
+        },
+        {
+            "id": 5,
+            "name": "F",
+            "image": "F"
+        },
+        {
+            "id": 6,
+            "name": "G",
+            "image": "G"
+        }
+
+    ]
+}

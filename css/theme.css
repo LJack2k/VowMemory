@@ -1,5 +1,7 @@
 :root {
     --main-background: #000000;
     --main-text: #ffffff;
-    
+    --panel-bg: #00000061;
+    --panel-border: darkgray;
+      
 }

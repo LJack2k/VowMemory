@@ -1,0 +1,151 @@
+
+.sprite {
+	background-image: url('../images/vow.png');
+	background-size: 1050px 600px;
+	background-repeat: no-repeat;
+	width: 150px;
+	height: 150px;
+}
+
+/* First Row */
+
+.img-ASCENDANTPLANE {
+	background-position-x: 0;
+	background-position-y: 0;
+}
+
+.img-BLACKGARDEN {
+	background-position-x: -150px;
+	background-position-y: 0;
+}
+
+.img-BLACKHEART {
+	background-position-x: -300px;
+	background-position-y: 0;
+}
+
+.img-COMMUNE {
+	background-position-x: -450px;
+	background-position-y: 0;
+}
+
+.img-DARKNESS {
+	background-position-x: -600px;
+	background-position-y: 0;
+}
+
+.img-DRINK {
+	background-position-x: -750px;
+	background-position-y: 0;
+}
+
+.img-EARTH {
+	background-position-x: -900px;
+	background-position-y: 0;
+}
+
+/* Second Row */
+.img-ENTER {
+	background-position-x: 0;
+	background-position-y: -150px;
+}
+
+.img-FLEET {
+	background-position-x: -150px;
+	background-position-y: -150px;
+}
+
+.img-GRIEF {
+	background-position-x: -300px;
+	background-position-y: -150px;
+}
+
+.img-GIVE {
+	background-position-x: -450px;
+	background-position-y: -150px;
+}
+
+.img-GUARDIAN {
+	background-position-x: -600px;
+	background-position-y: -150px;
+
+}
+
+.img-HIVE {
+	background-position-x: -750px;
+	background-position-y: -150px;
+	
+}
+
+.img-KILL {
+	background-position-x: -900px;
+	background-position-y: -150px;	
+}
+
+/* Third Row */
+.img-KNOWLEDGE {
+	background-position-x: 0;
+	background-position-y: -300px;
+}
+
+.img-LIGHT {
+	background-position-x: -150px;
+	background-position-y: -300px;
+}
+
+.img-LOVE {
+	background-position-x: -300px;
+	background-position-y: -300px;
+}
+
+.img-NEUTRAL {
+	background-position-x: -450px;
+	background-position-y: -300px;
+}
+
+.img-PYRAMID {
+	background-position-x: -600px;
+	background-position-y: -300px;
+}
+
+.img-SAVATHUN {
+	background-position-x: -750px;
+	background-position-y: -300px;
+}
+
+.img-SCORN {
+	background-position-x: -900px;
+	background-position-y: -300px;
+}
+
+
+/* Fourth Row */
+.img-STOP {
+	background-position-x: -0px;
+	background-position-y: -450px;
+}
+
+.img-TOWER {
+	background-position-x: -150px;
+	background-position-y: -450px;
+}
+
+.img-TRAVELER {
+	background-position-x: -300px;
+	background-position-y: -450px;
+}
+
+.img-WITHNESS {
+	background-position-x: -450px;
+	background-position-y: -450px;
+}
+
+.img-WORM {
+	background-position-x: -600px;
+	background-position-y: -450px;
+}
+
+.img-WORSHIP {
+	background-position-x: -750px;
+	background-position-y: -450px;
+}

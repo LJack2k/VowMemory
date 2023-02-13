@@ -1,0 +1,36 @@
+{
+    "title": "Vow of the Disciple",
+    "description": "Destiny 2",
+    "symbols": [
+        {"id": 0,"name": "ASCENDANT PLANE","image": "ASCENDANTPLANE"},
+        {"id": 1,"name": "BLACK GARDEN","image": "BLACKGARDEN"},
+        {"id": 2,"name": "BLACK HEART","image": "BLACKHEART"},
+        {"id": 3,"name": "COMMUNE","image": "COMMUNE"},
+        {"id": 4,"name": "DARKNESS","image": "DARKNESS"},
+        {"id": 5,"name": "DRINK","image": "DRINK"},
+        {"id": 6,"name": "EARTH","image": "EARTH"},
+        {"id": 7,"name": "ENTER","image": "ENTER"},
+        {"id": 8,"name": "FLEET","image": "FLEET"},
+        {"id": 9,"name": "GRIEF","image": "GRIEF"},
+        {"id": 10,"name": "GIVE","image": "GIVE"},
+        {"id": 11,"name": "GUARDIAN","image": "GUARDIAN"},
+        {"id": 12,"name": "HIVE","image": "HIVE"},
+        {"id": 13,"name": "KILL","image": "KILL"},
+        {"id": 14,"name": "KNOWLEDGE","image": "KNOWLEDGE"},
+        {"id": 15,"name": "LIGHT","image": "LIGHT"},
+        {"id": 16,"name": "LOVE","image": "LOVE"},
+        {"id": 17,"name": "NEUTRAL","image": "NEUTRAL"},
+        {"id": 18,"name": "PYRAMID","image": "PYRAMID"},
+        {"id": 19,"name": "SAVATHUN","image": "SAVATHUN"},
+        {"id": 20,"name": "SCORN","image": "SCORN"},
+        {"id": 21,"name": "STOP","image": "STOP"},
+        {"id": 22,"name": "TOWER","image": "TOWER"},
+        {"id": 23,"name": "TRAVELER","image": "TRAVELER"},
+        {"id": 24,"name": "WITHNESS","image": "WITHNESS"},
+        {"id": 25,"name": "WORM","image": "WORM"},
+        {"id": 26,"name": "WORSHIP","image": "WORSHIP"}
+    ]
+}
+
+
+
