@@ -7,7 +7,10 @@ var maxShuffles = maxChoices;
 var score = 0;
 var correct = 0;
 var wrong = 0;
-
+var showOptions = false;
+var newRoundTimer;
+var fadeOutTime;
+var newSymbolTime;
 
 var symbols = [
     {
@@ -50,10 +53,24 @@ $(function(){
         $("#btnHideSymbols").hide();
     });
     
+    $("#btnOptions").on("click", function() {
+        $(".game").hide();
+        $(".options").show();
+    });
+
+    $("#btnClose").on("click", function() {
+        $(".game").show();
+        $(".options").hide();
+    });
+
+    $(".btnOptions").click();
+
     //$("#btnShowSymbols").click();
 });
 
 function CheckAnwser(choiceId) {
+    if (newRoundTimer!= null) { clearTimeout(newRoundTimer); }
+
     if (choiceId == currentId) {
         correct++;
     }
@@ -71,8 +88,8 @@ function UpdateScore() {
 function LoadSymbols(game) {
     $.getJSON("games/" + game + "/game.json", function(data) {
         symbols = data.symbols;
-        $("#header > h1").html(data.title);
-        $("#header > h2").html(data.description);
+        $(".header > h1").html(data.title);
+        $(".header > h2").html(data.description);
         $("#spriteFile").attr("href", "games/" + game + "/game.css")
         FillCheatSheet();
         GetNewRound();
@@ -80,12 +97,15 @@ function LoadSymbols(game) {
 }
 
 function GetNewRound() {
+    if (newRoundTimer!= null) { clearTimeout(newRoundTimer); }
     PickNewQuestion();
     PickNewChoices();
     UpdateScore();
 }
 
 function PickNewQuestion() {
+    $("#question div.sprite").show();
+
     var newId = currentId;
     while(newId == currentId) {
         newId = randomInt(0, symbols.length -1);
@@ -95,9 +115,39 @@ function PickNewQuestion() {
     if (currentId > symbols.length-1) currentId = 0;
     
     $("#question div.sprite").attr("class", "sprite img-" + symbols[currentId].image);
+    
+    fadeOutTime = parseInt($("#fadeOutTime").val());
+    newSymbolTime = parseInt($("#newSymbolTime").val());
+
+    if (fadeOutTime > 0) {
+        $("#question div.sprite").fadeOut(fadeOutTime, function() {
+            if ($("#showChoicesAfter").is(":checked") && fadeOutTime > 0) {
+                $("#choices > .btn-row").show();
+            }
+            if (newSymbolTime > 0) {
+                newRoundTimer = setTimeout(EndOfRoundTimer, newSymbolTime);
+            }
+        });
+    } else {
+        $("#choices > .btn-row").show();
+        if (newSymbolTime > 0) {
+            newRoundTimer = setTimeout(EndOfRoundTimer, newSymbolTime);
+        }        
+    }
+}
+
+function EndOfRoundTimer() {
+    CheckAnwser(-1); // Is always wrong;
+    GetNewRound(); 
 }
 
 function PickNewChoices() {
+    if ($("#showChoicesAfter").is(":checked") && fadeOutTime > 0) {
+        $("#choices > .btn-row").hide();
+    } else {
+        $("#choices > .btn-row").show();
+    }
+
     var choices = [currentId];
     while(choices.length < maxChoices) {
       var newId = randomInt(0, symbols.length -1);

@@ -3,15 +3,15 @@
         <title>Vow of the Disciple Symbol Memory Game - Destiny 2</title>
         <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 
-        <link rel="stylesheet" type="text/css" href="css/theme.css" />
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/theme.css?v2" />
+        <link rel="stylesheet" type="text/css" href="css/style.css?v2" />
         <link rel="stylesheet" type="text/css" href="" id="spriteFile" />
-        <script type="text/javascript" src="js/memory.js"></script>
+        <script type="text/javascript" src="js/memory.js?v2"></script>
     </head>
     <body>
         <div class="content-wrapper">
-            <div class="content">
-                <div id="header">
+            <div class="game content">
+                <div class="header">
                     <h1>Title</h1>
                     <h2>Description</h2>
                 </div>
@@ -36,6 +36,7 @@
                 </div>
                 <div class="btn-row">
                     <div class="btn" id="btnNew">New Game</div>
+                    <div class="btn" id="btnOptions">Options</div>
                     <div class="btn" id="btnNext">Next Symbol</div>
                     <div class="btn" id="btnShowSymbols">Show Library</div>
                     <div class="btn" id="btnHideSymbols">Hide Library</div>
@@ -43,6 +44,46 @@
                 <input type="checkbox" id="chkShowSymbols">
                 <div id="symbols">
                     <ul></ul>
+                </div>
+            </div>
+            <div class="options content" style="display: none;">
+                <div>
+                    <h1>Game Options</h1>
+                </div>
+                <div id="options-list">
+                    <div>
+                        <label for="fadeOutTime">Fade Out Time</label>
+                        <select id="fadeOutTime">
+                            <option value="0">Off</option>
+                            <option value="500">0.5s</option>
+                            <option value="1000">1s</option>
+                            <option value="1500">1.5s</option>
+                            <option value="2000">2s</option>
+                            <option value="2500">2.5s</option>
+                            <option value="3000" selected>3s</option>
+                            <option value="4000">4s</option>
+                            <option value="5000">5s</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="showChoicesAfter">Show Choices After Fade Out</label>
+                        <input type="checkbox" id="showChoicesAfter" checked>
+                    </div>
+                    <div>
+                        <label for="newSymbolTime">New Round After</label>
+                        <select id="newSymbolTime">
+                            <option value="0">Off</option>
+                            <option value="1000" selected>1s</option>
+                            <option value="2000">2s</option>
+                            <option value="3000">3s</option>
+                            <option value="4000">4s</option>
+                            <option value="5000" selected>5s</option>
+                            <option value="10000">10s</option>
+                            <option value="15000">15s</option>
+                            <option value="20000">20s</option>
+                        </select>
+                    </div>                 
+                    <div class="btn" id="btnClose">Close</div>
                 </div>
             </div>
         </div>
